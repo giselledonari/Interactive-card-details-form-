@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+}
+
+body{
+    background-image: url(../images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: -100px;
+
+}
+
+.card1, .card2{
+    width: 447px;
+    height: 245px;
+    background-size: cover;
+    position: absolute;
+}
+
+/*card back*/
+.card1{ 
+    margin-top: 187px;
+    margin-left: 167px;
+    background-image: url(../images/bg-card-front.png);
+    color:white;
+    
+}
+
+.contenidoCard1{
+    margin:28px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+}
+.logo{
+    height: 48px;
+}
+.numerosCard1{
+    margin-top: 65px;
+    font-size: 26px;
+    letter-spacing: 5px;
+    position: absolute;
+    width: 600px;
+}
+.nombreCard1, .fechaCard1{
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: 165px;
+    width: 100%;
+}
+.nombreCard1{
+    width: 400px;
+}
+.fechaCard1{
+    width: 400px;
+    text-align: right;
+}
+/*card back*/
+.card2{
+    margin-top: 468px;
+    margin-left: 260px;
+    background-image: url(../images/bg-card-back.png);
+}
+.cvc{
+    margin-top: 113px;
+    color:white;
+    margin-left: 350px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+/*form*/
+form{
+    width: 380px;
+    margin-top:275px;
+    margin-left: 110px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    color: hsl(278, 68%, 11%);
+
+}
+
+.groupForm1, .groupForm2,.groupForm3{
+    width: 380px;
+}
+
+.groupForm1, .groupForm2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 95px;
+}
+
+.groupForm3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95px;
+}
+
+.expDate{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 95px;
+}
+
+.expDate label{
+    grid-column: 1/3;
+}
+.expDate #mes{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-right: 10px;
+}
+.expDate #anio{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-right: 10px;
+}
+
+.divCvc{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100px;
+}
+label{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+input{
+    margin-top: 0;
+    height: 42px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding-left: 16px;
+    font-size: 16px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+input:focus {
+    outline: unset;
+  }
+input:focus{
+    border:3px solid hsl(278, 94%, 30%) ;
+    cursor: pointer;
+}
+
+.btn-form{
+    width: 380px;
+    background-color: hsl(278, 68%, 11%);
+    color:white;
+    margin-top: 15px;
+    font-size: 16px;
+    height: 54px;
+    cursor: pointer;
+
+}
+.btn-form:focus{
+    border: none;
+}
+
+.pError{
+    margin-left: 5px;
+    font-size: 10px;
+    color:  hsl(0, 100%, 66%);
+}
+
+/*tks*/
+.tksImg,.tks, .subTks{
+    justify-self: center;
+}
+.tks{
+    margin-top: 40px;
+    font-size: 20px;
+    
+}
+.subTks{
+    margin-top: 30px;
+    margin-bottom:-15px ;
+    color: gray;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+@media (min-width:1440px) {
+    body{
+        margin-top: 0;
+        height: 900px;
+    }
+}
+
+@media (max-width: 700px) {
+    body{
+        background-image: url(../images/bg-main-mobile.png);
+        height: 705px;
+        grid-template-columns: 1fr;
+    }
+    .card1, .card2{
+        width: 286px;
+        height: 157px;
+    }
+    .card1{
+        margin-top: 252px;
+        margin-left: 16px;
+        z-index: 1;
+    }
+    .card2{
+        margin-top: 114px;
+        margin-left: 73px;
+        position: relative;
+
+    }
+    .contenidoCard1{
+        margin:18px 20px;
+    }
+    .logo{
+        height: 30px;
+    }
+    .numerosCard1{
+        margin-top: 42px;
+        font-size: 18px;
+        letter-spacing: 2.5px;
+        position: relative;
+        width: 250px;
+    }
+    .nombreCard1, .fechaCard1{
+        margin-top: 20px;
+        font-size: 10px;
+        position: relative;
+        width: 120px;
+    }
+    .cvc{
+        margin-top: 70px;
+        margin-left: 220px;
+        font-size: 12px;
+        letter-spacing: 2px;
+        width: 100px;
+        position: absolute;
+    }
+
+    form{
+        width: 325px;
+        margin:180px 25px;
+        font-size: 14px;
+    }
+
+    .groupForm1, .groupForm2, .groupForm3, .btn-form{
+        width: 325px;
+    }
+
+    .groupForm3{
+        gap:10px
+    }
+
+    .expDate input{
+        width:50px;
+    }
+    .divCvc input{
+        width: 100px;
+    }
+
+    
+}
+
+
+

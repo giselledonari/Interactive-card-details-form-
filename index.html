@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/style/style.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="card">
+
+    <div class="card1">
+      <div class="contenidoCard1">
+        <img class="logo" src="./assets/images/card-logo.svg" alt="logoCard">
+        <p id="numerosCard" class="numerosCard1"> 0000 0000 0000 0000 </p>
+        <p id="nombreCard" class="nombreCard1">Jane Appleseed</p>
+        <p class="fechaCard1"> <span id="mesCard">00</span><span>/</span><span id="anioCard">00</span></p>
+      </div>
+    </div>
+  
+    <div class="card2">
+      <div class="cvc" id="cvcCard">000</div>
+    </div>
+
+  </div>
+  <div class="formulario" >
+    <form id="resp">
+    <div class="groupForm1">
+      <label for="name">Cardholder Name</label>
+      <input type="text" id="name" name="name" placeholder="e.g. Jane Appleseed">
+      <p class="pError" id="errorName"></p>
+    </div>
+
+    <div class="groupForm2">
+      <label for="cardNumber">Card Number</label>
+      <input type="text" id="cardNumber" name="cardNumber" placeholder="e.g. 1234 5678 9123 0000">
+      <p class="pError" id="errorNumber"></p>
+    </div>
+
+    <div class="groupForm3">
+
+      <div class="expDate">
+        <label  for="expDate">Exp. Date (MM/YY)</label>
+        <input type="number" id="mes"  min="1" max="12" name="expDate" placeholder="MM">
+        <p class="pError" id="errorMes"></p>
+        <input type="number" id="anio" min="23" max="30" name="expDate" placeholder="YY">
+        <p class="pError" id="errorAnio"></p>
+      </div>
+
+      <div class="divCvc">
+        <label for="cvc">CVC</label>
+        <input type="number" id="cvc" name="cvc" min="111" max="999"placeholder="e.g. 123">
+        <p class="pError" id="errorCvc"><p>
+      </div>
+
+    </div>
+    <input id="btn-form" class="btn-form" type="submit" value="Confirm" />
+  </form>
+  
+  </div>
+  
+
+  
+
+  <!-- Completed state start 
+
+  Thank you!
+  We've added your card details
+  Continue
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Giselle Donari</a>.
+  </div>-->
+  <script src="./assets/javascript/app.js"></script>
+</body>
+</html>
