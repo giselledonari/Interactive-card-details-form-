@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://giselledonari.github.io/Interactive-card-details-form-/)
+- Live Site URL: [Github Page](https://giselledonari.github.io/Interactive-card-details-form-/)
 
 ## My process
 
